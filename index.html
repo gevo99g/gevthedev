@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang ="en">
     <head>
+        <script src="JS/jquery-3.2.1.min.js"></script>
         <meta name="viewport" content="width = device-width, intital-scale=1">
         <title>Gevorg Gabrielyan</title>  
         <link href="app.css" rel = "stylesheet"/>
@@ -9,19 +10,19 @@
 
 
         <div id="landingPage">
-            <div class="arrowHolder">
+            <!-- <div class="arrowHolder" id ="LeftHolder">
                 <a href="gevthedev.html"> 
                     <div class="chevron left" style="display: inline-block"></div>
                 </a>
-            </div>
+            </div> -->
         
-                <h1 class="headerTitle" style="display: inline-block" ></h1>
+            <h1 class="headerTitle" style="display: inline-block" ></h1>
 
-            <div class="arrowHolder">
+            <!-- <div class="arrowHolder" id ="RightHolder">
                 <a href="">                             
                     <div class="chevron right"style="display: inline-block" ></div>
                 </a>
-            </div>
+            </div> -->
         </div>
 
 
@@ -45,12 +46,23 @@
                     <div class="PGitem" style="display: inline-block" align="center">
                         <a href="gevthedev.html"> 
                         <img src="images/LandingIcon.jpg" alt="Gev The Dev"  align="center">
+                        
+
+                        <div class="OverlayInfo">
+                            <p class ="OverlayTitle">Gev the Dev</p>
+                            <p class ="OverlayDesc">Learn How to code with HTML CSS and much more!</p>
+                        </div>
+
                         </a>
                     </div>
                         
     
                     <div class="PGitem" style="display: inline-block" align="center">
                         <img src="images/gevthegamedevicon.jpg" alt="CSS"  align="center">
+                        <div class="OverlayInfo">
+                                <p class ="OverlayTitle">Gev the Game Dev</p>
+                                <p class ="OverlayDesc">Join me in developing a game with with Unity3D</p>
+                            </div>
                     </div>
                             
 
@@ -63,6 +75,27 @@
 
            <p id="copyright">Copyright 2017</p>
         </footer>
+
+
+        <script>
+                $(document).ready(function(){
+                    $( ".PGitem" ).hover
+                    (
+                        function() 
+                        {
+                            $(this).find( ".OverlayInfo" ).css("opacity", .7);
+                        }, 
+                        function() 
+                        {
+                            $(this).find( ".OverlayInfo" ).css("opacity", 0);
+                        }
+
+                    );
+                });
+
+                
+        </script>
+
     </body>
 
 </html>
