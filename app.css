@@ -12,7 +12,7 @@ body {
 #landingPage{
     height: 100vh;
     width: 100%;
-    background-image: url(images/Landing.jpg);
+    background-image: url(images/LandingPicture.jpg);
     background-size: cover; 
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
 .headerTitle{
     height: 100%;
     width: 100%;
-    background-image: url(images/TitleGevtheDev.png);
+    background-image: url(images/GevorgGabrielyanTitle.png);
     background-size: 50vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,38 +32,37 @@ body {
     
 }
 
-#Tutorials {
+#Projects {
     background-color: rgb(212, 212, 212);
     width: 100%;
     min-height: 450px;
     padding-bottom: 75px;
 }
 
-.TutorialGallery{
+.ProjectsGallery{
     justify-content: center;
     align-items: center;
 }
 
-.TGitem {
-    margin: 5px;
+.PGitem {
+    margin: 2px;
     border: 1px solid #ccc;
-    width: 180px;
+    width: 350px;
+    transition: all 200ms ease-in-out;
 }
     
-.TGitem:hover {
+.PGitem:hover {
     border: 1px solid #777;
     cursor: pointer;
+    background: url(images/GevorgGabrielyanTitle.png)
+
 }
     
-.TGitem img {
+.PGitem img {
     width: 100%;
     height: auto;
 }
     
-.TGitem {
-    padding: 15px;
-    text-align: center;
-}
 
 #AboutMe {
     position: relative;
@@ -72,7 +71,7 @@ body {
     text-align: center;
 }
 
-.TutorialsHeader{
+.ProjectsHeader{
     font-family: "Helvetica";
     text-align: center;
     font-size: 75px;
@@ -88,9 +87,9 @@ footer{
     position: relative;
     height: 10px;
     width: 100%;
-    background: -webkit-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); /* For Firefox 3.6 to 15 */
+    background: -webkit-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
+    background: -o-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
+    background: -moz-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
     background: linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153));
 
 }
@@ -127,5 +126,38 @@ footer{
     margin: 0 15%;
 }
 
+.arrowHolder {
+
+    width: 100px;
+    height: 100px;
+
+}
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+    width: 0.45em;
+    color: white;
+}
+
+.chevron.right:before {
+	left: 0;
+    transform: rotate(45deg);
+    font-size: 4em;
+}
+
+
+.chevron.left:before {
+	left: 0.25em;
+    transform: rotate(-135deg);
+    font-size: 4em;
+}
 
 

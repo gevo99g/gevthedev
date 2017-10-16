@@ -1,0 +1,166 @@
+header {
+    margin: 0px;
+    padding: 150px;
+    background-color: #D6D6D6;
+
+
+}
+body {
+    margin: 0;
+
+}
+#landingPage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/Landing.jpg);
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.headerTitle{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/GevorgGabrielyanTitle.png);
+    background-size: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    
+}
+
+#Tutorials {
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    min-height: 450px;
+    padding-bottom: 75px;
+}
+
+.TutorialsGallery{
+    justify-content: center;
+    align-items: center;
+}
+
+.TGitem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    transition: all 200ms ease-in-out;
+}
+    
+.TGitem:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+
+}
+    
+.TGitem img {
+    width: 100%;
+    height: auto;
+}
+    
+.TGitem {
+    padding: 15px;
+    text-align: center;
+}
+
+#AboutMe {
+    position: relative;
+    background-color: rgb(250, 41, 41);
+    width: 100%;
+    text-align: center;
+}
+
+.TutorialsHeader{
+    font-family: "Helvetica";
+    text-align: center;
+    font-size: 75px;
+    align-items: center;
+    padding: 75px;
+    
+}
+
+footer{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
+    background: -o-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
+    background: -moz-linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153)); 
+    background: linear-gradient(rgb(212, 212, 212), rgb(153, 153, 153));
+
+}
+
+#copyright{
+    position: absolute;
+    margin: 0;
+    color: rgb(223, 223, 223);
+    right: 7px;
+    font-size: 12px;
+}
+
+#aboutMe{
+    height: 100vh;
+    width: 100%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+.aboutMeTitle{
+    font-size: 50px;
+    font-family: "Helvetica";
+    margin: 0 15%;
+}
+
+.aboutMeContent{
+    font-size: 25px;
+    font-family: "Helvetica";
+    margin: 0 15%;
+}
+
+.arrowHolder {
+
+    width: 100px;
+    height: 100px;
+
+}
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+    width: 0.45em;
+    color: white;
+}
+
+.chevron.right:before {
+	left: 0;
+    transform: rotate(45deg);
+    font-size: 4em;
+}
+
+
+.chevron.left:before {
+	left: 0.25em;
+    transform: rotate(-135deg);
+    font-size: 4em;
+}
+
+
