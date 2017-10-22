@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -27,7 +28,8 @@ body {
     background-size: 100%;
     background-position: 0px 100px;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
+    bottom: 140px;
     display: flex;
     
 }
