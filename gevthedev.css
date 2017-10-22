@@ -10,13 +10,14 @@ body {
 
 }
 #landingPage{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-image: url(images/Landing.jpg);
     background-size: cover; 
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -30,6 +31,51 @@ body {
     position: relative;
     display: flex;
     
+}
+
+#MenueHolder {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    list-style-type: none;
+
+    align-items: center;    
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+
+}
+
+li {
+    float: left;
+
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Helvetica";
+}
+
+a:hover {
+    height: 1px;
+    width: auto;
+    background-color: red; 
+ 
+}
+
+.selector{
+    position: absolute;
+    height: 10px;
+    width: 10px;
 }
 
 #Tutorials {
