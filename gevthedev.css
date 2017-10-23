@@ -124,12 +124,6 @@ li {
     text-align: left;
 }
 
-#AboutMe {
-    position: relative;
-    background-color: rgb(250, 41, 41);
-    width: 100%;
-    text-align: center;
-}
 
 .TutorialsHeader{
     font-family: "Helvetica";
@@ -163,7 +157,7 @@ footer{
 }
 
 #aboutMe{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     color: gray;
     display: flex;
@@ -185,39 +179,3 @@ footer{
     font-family: "Helvetica";
     margin: 0 15%;
 }
-
-.arrowHolder {
-
-    width: 100px;
-    height: 100px;
-
-}
-.chevron::before {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	left: 0.15em;
-	position: relative;
-	top: 0.15em;
-	transform: rotate(-45deg);
-	vertical-align: top;
-    width: 0.45em;
-    color: white;
-}
-
-.chevron.right:before {
-	left: 0;
-    transform: rotate(45deg);
-    font-size: 4em;
-}
-
-
-.chevron.left:before {
-	left: 0.25em;
-    transform: rotate(-135deg);
-    font-size: 4em;
-}
-
-
