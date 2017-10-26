@@ -16,7 +16,6 @@ body {
     background-size: cover; 
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
 }
 
@@ -33,20 +32,24 @@ body {
 }
 
 #MenueHolder {
-    position: absolute;
-    top: 5%;
     display: flex;
 
     height: 100px;
-    justify-content: space-between; 
+    width: 62%;
+    justify-content: center; 
+    align-items: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 .navButton {
-    flex-basis: 20%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     color: white;
+    height: 100%;
+    border-top: 10px solid transparent;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -54,18 +57,23 @@ body {
     font-family: "Helvetica";
     font-size: 28px;
     flex: 1;
+    transition: all 200ms ease-in-out;
+    
+}
+
+.navButton p {
+    margin: 0;
+    text-align: center;
+
+
 }
 
 .navButton:hover {
-    height: 1px;
-    width: auto;
-    background-color: white; 
-    transition: all 200ms ease-in-out;
+    border-top: 10px solid white;  
     cursor: pointer;
- 
 }
 
-.navButton.active {
+/* .navButton.active {
     height: 1px;
     width: auto;
     background-color: white;  
@@ -76,7 +84,7 @@ body {
     width: auto;
     background-color: white; 
 
-}
+} */
 
 
 
