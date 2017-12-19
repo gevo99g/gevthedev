@@ -12,13 +12,14 @@ body {
 #landingPage{
     height: 75vh;
     width: 100%;
-    background-color: rgb(255, 124, 64);
+    background-image: url(images/Background.jpg);
     background-size: cover; 
     justify-content: center;
     position: relative;
     overflow: hidden;
     display: flex;
     top:auto;
+    background-attachment: fixed;
 
     
 }
@@ -71,18 +72,16 @@ body {
     cursor: pointer;
 }
 
-/* .navButton.active {
-    height: 1px;
-    width: auto;
-    background-color: white;  
+.navButton.active {
+    border-top: 10px solid white;  
+    cursor: pointer;
 }
 
 .navButton:hover:not(.active) {
-    height: 1px;
-    width: auto;
-    background-color: white; 
+    border-top: 10px solid white;  
+    cursor: pointer;
 
-} */
+}
 
 
 #pictureWindowOne{
@@ -99,12 +98,11 @@ body {
 #pictureWindowTwo{
     background-image: url(images/WebsiteParalaxTwo.png);
     background-repeat: no-repeat;
-    background-size: 850px 500px;
+    background-size: 850px 600px;
     width: 850px;
-    height: 500px;
+    height: 600px;
     position: absolute;
-    top: 50%;
-    margin-top: -50%;
+    top: 26%;
 
 }
 
