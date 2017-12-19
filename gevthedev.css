@@ -10,37 +10,35 @@ body {
 
 }
 #landingPage{
-    height: 50vh;
+    height: 75vh;
     width: 100%;
-    background-image: url(images/Gev-The-Dev-Banner.jpg);
+    background-color: rgb(255, 124, 64);
     background-size: cover; 
-    display: flex;
     justify-content: center;
     position: relative;
-}
+    overflow: hidden;
+    display: flex;
+    top:auto;
 
-
-.headerTitle{
-    height: 100%;
-    width: 100%;
-    background-image: url(images/TitleGevtheDev.png);
-    background-size: 50vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
     
 }
+
 
 #MenueHolder {
     display: flex;
 
     height: 100px;
-    width: 62%;
+    width: 800px;
     justify-content: center; 
     align-items: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; */
 }
 
 .navButton {
@@ -85,6 +83,42 @@ body {
     background-color: white; 
 
 } */
+
+
+#pictureWindowOne{
+    background-image: url(images/WebsiteParalaxOne.png);
+    background-repeat: no-repeat;
+    background-size: 850px 500px;
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+#pictureWindowTwo{
+    background-image: url(images/WebsiteParalaxTwo.png);
+    background-repeat: no-repeat;
+    background-size: 850px 500px;
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+
+}
+
+#pictureWindowThree{
+    background-image: url(images/WebsiteParalaxThree.png);
+    background-repeat: no-repeat;
+    background-size: 850px 500px;
+    width: 850px;
+    height: 500px;
+    position: absolute;
+    top: 250px;
+    right: 20px;
+}
+
 
 
 
